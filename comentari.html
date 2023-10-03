@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/meusEstils.css">
+</head>
+<body>
+    <h1 class="text-center p-4 head">FORMULARI DE CONTACTE</h1>
+    <div class="container-fluid h-100 ">
+    
+            <form action="datos.php" method="post">
+              
+                <div class="footer">
+                <label for="Nombre">Nom</label>
+                <input type="text" class="form-control col" name="tuNombre" id="Nombre"
+                    placeholder="Escriu Nom i Cognoms*" required>
+                <label for="tuCorreo">Mail</label>
+                <input type="email" class="form-control col" name="tuCorreo" id="tuCorreo" placeholder="Reberàs confirmació*"
+                    required>
+    
+                <label for="tuTeléfono">Telèfon</label>
+                <input type="tel" class="form-control col" name="tuTelefono" id="tuTelefono"
+                    placeholder="" required>
+                    <br>         
+                                      
+                    <label for="comenta" class="caption-top"></label>
+                 <textarea name="comenta" id="comenta" cols="60" rows="10" placeholder="deixan's un comentari"></textarea>
+                 <button type="submit" class="btn btn-primary w-25 mx-auto m-3" id="btnComprar"><strong>Enviar  ⇲ </strong></button>
+                </div>
+                </form>
+      
+       
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/meusEstils.css">
+    <style>
+        body {
+            background-color: rgb(230, 226, 221);
+        }
+
+        aside {
+            background-color: white;
+            min-width: 200px;
+        }
+
+        span {
+            font-size: 30px;
+        }
+       
+
+        a {
+            border-radius: 6px;
+        }
+
+        .dOverview, .dCost{display:none}
+        .onone {display: none  }
+      .bloc{display:block}
+     
+      
+
+        
+    </style>
+</head>
+
+<body>
+    <h2 class=" m-4  "><strong>Andorralands </strong></h2>
+    <nav class="navbar bg-light d-flex justify-content-md-evenly">
+        <a class="navbar-brand" href="#">HOME</a>
+        <a class="navbar-brand" href="#">TOURS</a>
+        <a class="navbar-brand" href="#">PACK ACTIVIDADES</a>
+        <a class="navbar-brand" href="#">TRANSPORTE ANDORRA</a>
+        <a class="navbar-brand" href="#">CONTACTO</a>
+    </nav>
+
+    <h2 class=" m-4  ">Family Park de Canillo</h2>
+    <div class="container-fluid h-100 ">
+
+        <div class="row ">
+            <img src="http://andorralands.com/wp-content/uploads/2023/05/tour-family-park.jpeg.webp" alt="titol"
+                class="p-0 col-8 m-3">
+            <aside class="col-3">
+                <p>From</p>
+                <p><span>€200</span>/Adult</p>
+                <button type="submit" class="btn btn-primary w-100 mx-auto m-1 mb-4" id="btnComprar">Check
+                    Avalability</button>
+
+                <p>Need help with booking ? <a href="#">Send Us A Message</a> </p>
+            </aside>
+            <div class="row  mt-5">
+                <p>Grandvalira es uno de los grandes focos de atracción para los viajeros que visitan Andorra. Y no solo
+                    por sus espectaculares pistas de esquí, sino también por toda la oferta de ocio que la rodea en
+                    cualquier época. El mejor ejemplo de ello es Mon(t) Magic: el family park que está integrado en el
+                    sector de Canillo.</p>
+                <p>Se trata de un <strong>parque de aventuras y de ocio al mismo tiempo </strong>, con la ventaja
+                    añadida de su ubicación entre montañas: en invierno está cubierto de un hermoso manto blanco y en
+                    verano lo está por una capa verde de vegetación. Y en ambos casos, inundados de aire puro.</p>
+                <p>En el centro del recinto, un estanque aporta un agradable contraste de agua, que sirve además de
+                    <strong>tranquilo lugar en el que realizar las actividades acuáticas </strong>de manera cómoda y
+                    segura. Sin duda, un lugar en el que es imposible aburrirse y que se renueva constantemente para
+                    ofrecer atractivos sorprendentes a sus visitantes.</p>
+                <p>Los horarios de Mon(t) Magic son diferentes según se trate de la temporada de invierno o de verano.
+                    En invierno, este sector de la estación de Grandvalira se abre normalmente de 9.00 a 17.00. Pero en
+                    verano, ese horario es ligeramente distinto: de 10.00 a 18.00 aproximadamente, con una hora más por
+                    la tarde en julio y agosto. No obstante, te recomendamos consultar esta información actualizada en
+                    la web de esta estación de esquí.</p>
+                El calendario anual de aperturas también varía según la estación. En especial en invierno, pues depende
+                de las condiciones climatológicas. El inicio de la temporada invernal suele ser en diciembre y se
+                prolonga hasta abril, según la cantidad de nieve existente. Y en verano, la temporada suele ir de junio
+                a mediados de septiembre. Desde esta fecha hasta mediados de octubre, la apertura es solo durante los
+                fines de semana.
+                <p>En cuanto a los servicios para el visitante en este parque de aventuras, destaca el restaurante El
+                    Forn y la tienda oficial.</p>
+                <p>Por lo que respecta al acceso a Mon(t) Magic, solo existe la opción del telecabina de Canillo, que
+                    tiene una estación en esta población y otra en este sector de la estación de esquí. Por tanto, no
+                    existe carretera para acceder a esta zona de aventuras. Los tickets de este telecabina se incluyen
+                    en el Forfait Peatón, del que hablamos a continuación.</p>
+
+
+
+            </div>
+            <nav class="navbar bg-light d-flex justify-content-md-around m-2 gap-3 ">
+                <!-- <a class="navbar-brand overview" href="">Overview</a> -->
+                <button class="btn bg-light w-25 mx-auto m-1" id="overview">Overview</button>
+                <button class="btn bg-light w-25 mx-auto m-1 cost" id="cost">Cost</button>
+                <button class="btn bg-light w-25 mx-auto m-1 itinerary">Itinerary</button>
+               
+            </nav>
+            <div class="dOverview">
+                <h5>Descripción general</h5>
+                <p>Mont Magic es un family park que se ubica en la estación de esquí de Grandvalira, en el sector de
+                    Canillo. Y se trata de una propuesta de ocio para niños y adultos que debes tener siempre anotada en
+                    tu agenda, puesto que abre tanto en inverno como en verano.</p>
+            </div>
+            <div class="dCost">
+               <h5>La excursión incluye</h5>
+                <ul>
+                    <li>Botella de agua</li>
+                    <li>Pieza de fruta y sandwich</li>
+                    <li>Parada de descanso</li>
+                </ul>
+            </div> 
+            <div class="row ">
+
+                <form action="datos.php" method="post">
+
+                    <div class="footer">
+                        <label for="Nombre">Nom</label>
+                        <input type="text" class="form-control col" name="tuNombre" id="Nombre"
+                            placeholder="Escriu Nom i Cognoms*" required>
+                        <label for="tuCorreo">Mail</label>
+                        <input type="email" class="form-control col" name="tuCorreo" id="tuCorreo"
+                            placeholder="entra el teu mail" required>
+
+                        <label for="tuTeléfono">Telèfon</label>
+                        <input type="tel" class="form-control col" name="tuTelefono" id="tuTelefono" placeholder=""
+                            required>
+                        <br>
+                        <div>
+                        <label for="pais">País</label>
+                    <select name="pais" id="pais">                       
+                        <option value="1">Espanya </option>
+                        <option value="2">França</option>
+                        <option value="3">Andorra</option>
+                        <option value="3">Portugal</option>
+                    </select>
+                </div>
+<div>
+    </div>
+                    <br>
+                        <label for="comenta" class="caption-top"></label>
+                        <textarea name="comenta" id="comenta" cols="60" rows="10"
+                            placeholder="deixan's un comentari"></textarea>
+                        <button type="submit" class="btn btn-primary w-25 mx-auto m-3" id="btnComprar"><strong>Enviar ⇲
+                            </strong></button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <script>
+            // por defecto display none, al pulsar display block
+            function none() {
+                const Todo = document.querySelector("div.dOverview");
+                Todo.classList.toggle("bloc");   
+                document.querySelector("div.dCost").classList.remove ("bloc"); 
+                // if (document.querySelector("dCost").classList.contains("bloc") ){document.querySelector("div.dCost").classList.remove("bloc")}    
+            }
+            let four = document.querySelector("#overview");
+            four.addEventListener("click", none);  
+
+            function none2() {
+                const Todo = document.querySelector("div.dCost");
+                Todo.classList.toggle("bloc"); 
+                document.querySelector("div.dOverview").classList.remove ("bloc");            
+            }
+
+            let five = document.querySelector("#cost");
+            five.addEventListener("click", none2);      
+
+
+        </script>
+
+        <script src="js/bootstrap.min.js"> </script>
+
+
+</body>
+
+</html>

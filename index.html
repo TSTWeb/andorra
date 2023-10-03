@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andorra</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/meusEstils.css">
+    <style>
+        .card-img-top {
+            width: 200px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        .head {
+            background-color: brown;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid h-100 ">
+
+        <div class="row  head ">
+            <h1 class="text-center p-4"> VIATGE A ANDORRA</h1>
+            <!-- MENU NAVEGACIO -->
+            <nav class="navbar navbar-expand-md bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">ºHOME</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="situacio.html">SITUACIÓ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="excursions.html">TOURS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reserva">RESERVA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comentari.html">DEIXA COMENTARI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+        <div class="row">
+            <img src="img/Titol.jpg" alt="titol" class="p-0">
+        </div>
+        <div class="row  head mt-2">
+            <h3 class="text-center p-4"> ACCEDEIX A LES NOSTRES OFERTES</h3>
+        </div>
+
+        <!-- // CARDS   sm-2 md 3 lg 4  -->
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 p-1 mt-2">
+            <div class="card col">
+                <img src="img/icultura.JPG" class="card-img-top " alt="cultura">
+                <div class="card-body">
+                    <h5 class="card-title">CULTURA</h5>
+                    <p class="card-text">Amplia oferta cultural de tota mena</p>
+                    <a href="cultura.html" class="btn btn-danger">+ INFO</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="img/iessqui.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ESQUÍ</h5>
+                    <p class="card-text"> Grans possibilitats d'esquí</p>
+                    <a href="esqui.html" class="btn btn-danger">+ INFO</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="img/iitineraris.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">TOURS</h5>
+                    <p class="card-text"> Excursions per tota la Vall</p>
+                    <a href="excursions.html" class="btn btn-danger">+ INFO</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="img/imenjar.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">GASTRONOMIA</h5>
+                    <p class="card-text"> La millor oferta gastronòmica</p>
+                    <a href="#" class="btn btn-danger">+ INFO</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="img/ishoping.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SHOPPING</h5>
+                    <p class="card-text"> Grans possibilitats d'esquí</p>
+                    <a href="#" class="btn btn-danger">+ INFO</a>
+                </div>
+            </div>
+
+            <div class="card col">
+                <img src="img/inatura.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NATURA</h5>
+                    <p class="card-text"> Un país amb molts espais naturals</p>
+                    <a href="#" class="btn btn-danger">+ INFO</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center p-4 head" id="reserva">Reserva Ja</h2>
+        <div class="row">
+            <form action="datos.php" method="post">
+                <label for="Nom">Nombre</label>
+                <input type="text" class="form-control" name="tuNombre" id="Nombre" placeholder="Escriu Nom i Cognoms*">
+                <label for="tuCorreo">Mail</label>
+                <input type="email" class="form-control" name="tuCorreo" id="tuCorreo"
+                    placeholder="Reberàs confirmació">
+
+                <label for="tuTeléfono">Telèfon</label>
+                <input type="tel" class="form-control" name="tuTelefono" id="tuTelefono" placeholder="">
+                <table class="table caption-top">
+                    <caption class="titol">Tipus d'estada</caption>
+                    <tr>
+                        <td> <input type="radio" name="tipus" id="r1" value="35" checked></td>
+                        <td>Hotel i Esmorzar </td>
+                        <td>35 €</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="tipus" id="r2" value="60"></td>
+                        <td>Hotel Mitja Pensió -dinar-</td>
+                        <td>60 €</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="tipus" id="r3" value="85"></td>
+                        <td>Hotel Pensió Complerta</td>
+                        <td>85 €</td>
+                    </tr>
+                </table>
+                <div class=" mx-auto footer">
+                    <div class="row row-cols-1 row-cols-sm-2 g-3">
+                        <div>
+                            <label for="cantidad">Durada de l'estada</label>
+                            <select name="cantidad" id="cantidad">
+                                <option value="1">1 dia </option>
+                                <option value="2">2 dies</option>
+                                <option value="3">3 dies</option>
+                                <option value="3">4 dies</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="persones">Núm. de persones</label>
+                            <select name="persones" id="persones">
+                                <option value="1">1 persona </option>
+                                <option value="2">2 persones</option>
+                                <option value="3">3 persones</option>
+                                <option value="3">4 persones</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="dt row">
+                        <button id="btnCalcula" type="button" class="btn btn-primary w-25">Calcula Preu final</button>
+                        <h4 id="total" class="col">total</h4>
+                    </div>
+                    <br>
+                    <div class="footer">
+
+                        <button type="submit" class="btn btn-primary w-50 mx-auto m-1" id="btnComprar">RESERVA
+                            ARA</button>
+                        <div class="rows-cols-3 mx-auto p-4">
+                            <a href="#"><img src="img/PayPal.JPG" alt="pay" class="ip"></a>
+                            <a href="#"><img src="img/visa.JPG" alt="visa" class="ip"></a>
+                            <a href="#"><img src="img/AmericanEx.JPG" alt="amer" class="ip"></a>
+                            <a href="#"><img src="img/masterCard.JPG" alt="amer" class="ip"></a>
+                        </div>
+                    </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        let co=1
+        function calculaOption () {
+            
+                if (document.getElementById("r1").checked) {
+                    co = +document.getElementById("r1").value;
+                }
+                if (document.getElementById("r2").checked) {
+                    co = +document.getElementById("r2").value
+                }
+                if (document.getElementById("r3").checked) {
+                    co = +document.getElementById("r3").value
+                }
+            }
+
+        function calcPreu() {
+            var np = +(document.querySelector("#persones").value);
+            var nd = +(document.querySelector("#cantidad").value);           
+            
+            calculaOption();
+            let tot=np * nd * co
+            document.querySelector("h4").innerHTML = (` ${np} persones ${nd} dies a
+            ${co} € diaris TOTAL: ${tot} € `);
+        }
+             
+        document.querySelector("#btnCalcula").addEventListener("click", calcPreu)
+
+
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
